@@ -9,6 +9,7 @@ const createNewUser = async (req, res, next) => {
     }
 
     // check if user already exists
+    //add comment
     const isUserExists = await User.findOne({ email });
 
     if (isUserExists) {
